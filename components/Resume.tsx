@@ -12,7 +12,7 @@ export const Resume: React.FC<ResumeProps> = ({ data, className, forwardedRef })
   return (
     <div ref={forwardedRef} className={`bg-white text-gray-800 ${className} print:w-full`}>
       {/* Header / Contact */}
-      <header className="border-b-2 border-gray-800 pb-6 mb-6">
+      <header className="border-b-2 border-gray-800 pb-6 mb-6 break-inside-avoid">
         <h1 className="text-4xl font-bold uppercase tracking-wider text-gray-900 mb-2">{data.name}</h1>
         <h2 className="text-xl font-medium text-gray-600 mb-4">{data.title}</h2>
         
@@ -55,7 +55,7 @@ export const Resume: React.FC<ResumeProps> = ({ data, className, forwardedRef })
         <div className="space-y-6">
           
           {/* Summary */}
-          <section>
+          <section className="break-inside-avoid">
             <h3 className="text-sm font-bold uppercase tracking-widest border-b border-gray-300 pb-1 mb-3 text-gray-900">
               Profile
             </h3>
@@ -66,7 +66,7 @@ export const Resume: React.FC<ResumeProps> = ({ data, className, forwardedRef })
 
           {/* Experience / Projects */}
           <section>
-            <h3 className="text-sm font-bold uppercase tracking-widest border-b border-gray-300 pb-1 mb-4 text-gray-900">
+            <h3 className="text-sm font-bold uppercase tracking-widest border-b border-gray-300 pb-1 mb-4 text-gray-900 break-inside-avoid">
               Selected Projects
             </h3>
             <div className="space-y-5">
@@ -109,7 +109,7 @@ export const Resume: React.FC<ResumeProps> = ({ data, className, forwardedRef })
         <div className="space-y-6">
 
           {/* Skills */}
-          <section>
+          <section className="break-inside-avoid">
             <h3 className="text-sm font-bold uppercase tracking-widest border-b border-gray-300 pb-1 mb-3 text-gray-900">
               Skills
             </h3>
@@ -130,7 +130,7 @@ export const Resume: React.FC<ResumeProps> = ({ data, className, forwardedRef })
           </section>
 
           {/* Education */}
-          <section>
+          <section className="break-inside-avoid">
             <h3 className="text-sm font-bold uppercase tracking-widest border-b border-gray-300 pb-1 mb-3 text-gray-900">
               Education
             </h3>
@@ -147,7 +147,7 @@ export const Resume: React.FC<ResumeProps> = ({ data, className, forwardedRef })
           </section>
 
            {/* Languages */}
-           <section>
+           <section className="break-inside-avoid">
             <h3 className="text-sm font-bold uppercase tracking-widest border-b border-gray-300 pb-1 mb-3 text-gray-900">
               Languages
             </h3>
@@ -164,7 +164,7 @@ export const Resume: React.FC<ResumeProps> = ({ data, className, forwardedRef })
           </section>
 
           {/* Certificates */}
-          <section>
+          <section className="break-inside-avoid">
             <h3 className="text-sm font-bold uppercase tracking-widest border-b border-gray-300 pb-1 mb-3 text-gray-900">
               Certificates
             </h3>
